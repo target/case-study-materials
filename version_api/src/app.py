@@ -7,7 +7,7 @@ api = Api(app)
 
 class HelloWorld(Resource):
     def get(self):
-        return {'version': '0.0.21'}
+        return {'version': '0.0.1'}
 
 api.add_resource(HelloWorld, '/')
 
