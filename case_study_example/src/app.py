@@ -8,8 +8,8 @@ import json
 app = Flask(__name__)
 api = Api(app)
 
-version_api_url = 'http://version_api:5000'
-fake_api_url = 'http://fake_api:5001'
+version_api_url = 'http://version_api:8000'
+fake_api_url = 'http://fake_api:8000'
 
 class HelloWorld(Resource):
     def get(self):
