@@ -1,3 +1,2 @@
-docker kill $(docker ps -q)
-docker system prune
+docker build -t case_study_example:latest .
 docker-compose up
