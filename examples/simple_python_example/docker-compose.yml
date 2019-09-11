@@ -1,0 +1,16 @@
+fake_api:
+  image: target/casestudy:fake_api 
+  expose:
+    - 8000
+version_api:
+  image: target/casestudy:version_api
+  expose:
+    - 8000
+app:
+  image: case_study_example:latest 
+  links:
+    - fake_api 
+    - version_api 
+  ports:
+    - 80:8000
+
