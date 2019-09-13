@@ -1,16 +1,30 @@
+postgres:
+  image: postgres:10
+  environment:
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=
+    - POSTGRES_DB=jsb
+  ports:
+    - 5432:5432
+  expose:
+    - 5432 
+
 fake_api:
   image: target/casestudy:fake_api 
   expose:
     - 8000
+
 version_api:
   image: target/casestudy:version_api
   expose:
     - 8000
+
 app:
   image: java_spring_boot:latest 
   links:
     - fake_api 
     - version_api 
+    - postgres 
   ports:
     - 80:8080
 
