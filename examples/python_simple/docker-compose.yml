@@ -7,7 +7,7 @@ version_api:
   expose:
     - 8000
 app:
-  image: case_study_example:latest 
+  image: python_simple:latest 
   links:
     - fake_api 
     - version_api 

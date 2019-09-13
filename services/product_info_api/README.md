@@ -1,14 +1,17 @@
 # Product Info API
 
-Displays a list of products or a list of a single product. This application starts on port 5003. Note: none of the data used in these results are real. They are auto-generated fake data.
+Displays a list of products or a list of a single product. This application starts on port 8000. Note: none of the data used in these results are real. They are auto-generated fake data.
 
 There are two api calls available, if you start this docker container you should be able to see results from these two sample URLs:
 
+## Using in Docker Compose
+target/casestudy:product_info_api  
+
 ## Get all products
-- (GET) http://localhost:5003/products
+- (GET) http://localhost:8000/products
 
 ## Get a single product
-- (GET) http://localhost:5003/product/1001
+- (GET) http://localhost:8000/product/1001
 
 ## Product json
 ```javascript
@@ -44,7 +47,4 @@ There are two api calls available, if you start this docker container you should
 ```
 
 # Build the Docker Container
-To build and run the docker container locally, you can use the `kill-tag-run.sh` script. This script will start the container on `http://127.0.0.1:5003`.
-
-### NOTE:
-For testing purposes you will have to build this docker container locally and reference it manually because it has not been published. A simple nodejs example is here: https://git.target.com/grok/case_studies/blob/master/OnlineRetailStorefrontSolutions/UISolutions/docker-compose.yml
+To build and run the docker container locally, you can use the `kill-tag-run.sh` script. This script will start the container on `http://127.0.0.1:8000`.

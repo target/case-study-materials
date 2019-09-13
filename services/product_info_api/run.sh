@@ -1,4 +1,4 @@
-container="fake_api"
+container="product_info_api"
 version="latest"
 docker rm $container -f
 docker build -t $container:$version . 
