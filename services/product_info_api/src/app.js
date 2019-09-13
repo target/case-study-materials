@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
   return res.send('OK');
 });
 
-const PORT = process.env.PORT || 5003;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });

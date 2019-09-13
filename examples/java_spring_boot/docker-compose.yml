@@ -7,10 +7,10 @@ version_api:
   expose:
     - 8000
 app:
-  image: python_simple:latest 
+  image: java_spring_boot:latest 
   links:
     - fake_api 
     - version_api 
   ports:
-    - 80:8000
+    - 80:8080
 

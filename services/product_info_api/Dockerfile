@@ -14,6 +14,6 @@ RUN npm install
 # copy our code to the docker container
 COPY /src /src
 
-EXPOSE 5003
+EXPOSE 8000 
 
 CMD node app.js

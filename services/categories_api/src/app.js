@@ -12,6 +12,6 @@ app.get('/category/:id', (req, res) => {
     res.send({"response": req.params.id }); 
 });
 
-app.listen(5002, () => {
+app.listen(8000, () => {
     console.log('Server up!');
 });
