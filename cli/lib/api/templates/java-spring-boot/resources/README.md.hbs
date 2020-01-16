@@ -1,0 +1,28 @@
+# Java Spring Boot Example
+This is a barebones implementation of a Spring Boot application.
+
+## Dependencies
+In order to run this application, you will need to install [docker](https://docs.docker.com/install/) on your machine.
+
+## To Run
+Open a terminal and ensure your working directory is the root of this generated application
+
+```bash
+target-case-study run
+```
+
+Access api at `http://localhost:8000/hello`
+
+## To Test
+Open a terminal and ensure your working directory is the root of this generated application
+
+```bash
+target-case-study test
+```
+
+## To Connect to Services
+{{#each services}}
+  ### {{this.name}}
+    Connect from host machine: http://localhost:8001/{{this.name}}/
+    Connect in docker container: http://services/{{this.name}}/
+{{/each}}

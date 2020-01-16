@@ -1,0 +1,91 @@
+{
+  "name": "test-app",
+  "children": [{
+    "name": ".casestudy"
+  }, {
+    "name": ".dockerignore"
+  }, {
+    "name": "Dockerfile"
+  }, {
+    "name": "README.md"
+  }, {
+    "name": "build.gradle"
+  }, {
+    "name": "docker-compose.app.yml"
+  }, {
+    "name": "docker-compose.base.yml"
+  }, {
+    "name": "docker-compose.test.yml"
+  }, {
+    "name": "gradle",
+    "children": [{
+      "name": "wrapper",
+      "children": [{
+        "name": "gradle-wrapper.jar"
+      }, {
+        "name": "gradle-wrapper.properties"
+      }]
+    }]
+  }, {
+    "name": "gradlew"
+  }, {
+    "name": "gradlew.bat"
+  }, {
+    "name": "nginx.conf"
+  }, {
+    "name": "src",
+    "children": [{
+      "name": "main",
+      "children": [{
+        "name": "java",
+        "children": [{
+          "name": "com",
+          "children": [{
+            "name": "target",
+            "children": [{
+              "name": "jsb",
+              "children": [{
+                "name": "Main.java"
+              }, {
+                "name": "controllers",
+                "children": [{
+                  "name": "HelloWorldController.java"
+                }]
+              }]
+            }]
+          }]
+        }]
+      }, {
+        "name": "resources",
+        "children": [{
+          "name": "application.yml"
+        }]
+      }]
+    }, {
+      "name": "test",
+      "children": [{
+        "name": "java",
+        "children": [{
+          "name": "com",
+          "children": [{
+            "name": "target",
+            "children": [{
+              "name": "jsb",
+              "children": [{
+                "name": "controllers",
+                "children": [{
+                  "name": "HelloWorldControllerTest.java"
+                }]
+              }]
+            }]
+          }]
+        }]
+      }, {
+        "name": "resources",
+        "children": [{
+          "name": "application.yml"
+        }]
+      }]
+    }]
+  }]
+}
