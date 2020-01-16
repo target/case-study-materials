@@ -1,0 +1,43 @@
+{
+  "name": "test-app",
+  "children": [{
+    "name": ".casestudy"
+  }, {
+    "name": ".dockerignore"
+  }, {
+    "name": "Dockerfile"
+  }, {
+    "name": "README.md"
+  }, {
+    "name": "docker-compose.app.yml"
+  }, {
+    "name": "docker-compose.base.yml"
+  }, {
+    "name": "docker-compose.test.yml"
+  }, {
+    "name": "nginx.conf"
+  }, {
+    "name": "package.json"
+  }, {
+    "name": "public",
+    "children": [{
+      "name": "index.html"
+    }]
+  }, {
+    "name": "src",
+    "children": [{
+      "name": "App",
+      "children": [{
+        "name": "App.css"
+      }, {
+        "name": "App.js"
+      }, {
+        "name": "App.test.js"
+      }, {
+        "name": "index.js"
+      }]
+    }, {
+      "name": "index.js"
+    }]
+  }]
+}
